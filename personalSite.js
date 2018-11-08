@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => res.send('Currently under construction :).'));
 
-app.listen(3000, () => console.log('Node.js app listening on port 3000.'));
+app.listen(PORT, () => console.log(`Node.js app listening on port ${port}.`));
